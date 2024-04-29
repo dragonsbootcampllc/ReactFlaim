@@ -4,7 +4,7 @@ import ContentMainContent from '../hazem-components/SeconedPage-components/Conte
 import ContentNav from '../hazem-components/SeconedPage-components/ContentNav';
 import ContentSubHead from '../hazem-components/SeconedPage-components/ContentSubHead';
 import ZenteroHeader from '../hazem-components/SeconedPage-components/ZenteroHeader';
-import'../MainData.json';
+
 
 
 function SecondPage() {
