@@ -12,7 +12,7 @@ function ZenteroHeader(props) {
                 <div className="blue w-4 h-4 bg-green-500 rounded-full mr-1"></div>
             </div>
             <div className="text text-white text-center bg-background rounded-3xl w-3/5">
-                <p className=' text-lg'> {Data.secondPage.ZenteroHeader.p}</p>
+                <p className=' text-lg'> {Data.secondPage.ZenteroHeader.p? Data.secondPage.ZenteroHeader.p :"Null"}</p>
             </div>
             <div className="boxs flex">
                 <div className="box bg-gray-500 w-6 h-6 rounded-lg mr-3 "></div>
