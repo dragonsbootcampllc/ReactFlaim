@@ -1,12 +1,12 @@
-
+import Data from '../../MainData.json';
 
 
 function ContentSubHead() {
     return (
         <div className="sub-head flex justify-between items-center text-white  ">
             <div className="text">
-                <h1 className="  text-2xl ">Jappanese Pottery</h1>
-                <p className=" text-borderColor pt-1 text-sm">Marketing Campaign for a new TV series Launch</p>
+                <h1 className="  text-2xl ">{ Data.secondPage.ContentSubHead.Text1.h1}</h1>
+                <p className=" text-borderColor pt-1 text-sm">{ Data.secondPage.ContentSubHead.Text1.p}</p>
             </div>
             <div className="left hidden  md:flex justify-between items-center w-2/6 ">
                 <div className="  images md:flex relative ">
@@ -26,7 +26,7 @@ function ContentSubHead() {
                     </div>
                 </div>
                 <div className="box text-center">
-                    <div className="button bg-background border-none text-borderColor p-2 rounded-lg cursor-pointer">share</div>
+                    <div className="button bg-background border-none text-borderColor p-2 rounded-lg cursor-pointer">{ Data.secondPage.ContentSubHead.Text2.p}</div>
                 </div>
             </div>
         </div>
