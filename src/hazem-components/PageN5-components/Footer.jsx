@@ -2,6 +2,7 @@
 
 function Footer(props) {
     const { Data } = props;
+    Data ? Data : null;
     return (
         <div className="container pt-10  pb-5">
             <div className="cont text-center md:text-left bg-background p-5 border border-borderColor my-5 flex flex-col md:flex-row justify-between items-center rounded-lg">

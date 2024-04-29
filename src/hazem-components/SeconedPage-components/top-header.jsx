@@ -2,6 +2,7 @@
 
 function TopHeader(props) {
     const { Data } = props;
+    Data ? Data : null;
     return (
         <div className='top-header text-white text-center pt-20' >
             <div className="container mx-auto max-w-3xl 	 ">

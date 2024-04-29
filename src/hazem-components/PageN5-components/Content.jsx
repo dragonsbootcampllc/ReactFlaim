@@ -3,6 +3,7 @@
 
 function Content(props) {
     const { Data } = props;
+    Data ? Data : null;
     return (
         <div className=" container boxes grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 pt-7 gap-4 ">
             <div className="card border border-borderColor p-4 rounded-lg text-center md:text-left">

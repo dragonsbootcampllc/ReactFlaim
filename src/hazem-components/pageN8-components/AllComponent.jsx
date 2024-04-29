@@ -4,10 +4,11 @@
 
 function AllComponent( props ) {
     const { Data } = props;
+    Data ? Data : null;
     return (
         <div className=" all mt-8">
             <div className="header">
-                <div className="container text-center">
+                <div className="container mx-auto text-center">
                     <p className=" text-4xl font-bold">{Data.PageN8.header.p1}</p>
                     <p className=" text-4xl m-0  md:ml-14 font-bold">{Data.PageN8.header.p2}</p>
                 </div>

@@ -5,6 +5,7 @@
 
 function Header(props) {
     const { Data } = props;
+    Data ? Data : null;
     return (
         <div className=" container bg-black pt-16 text-center md:text-left">
             <h1 className=" text-white text-2xl md:text-5xl"> {Data.PageN5.Header.h1 }</h1>

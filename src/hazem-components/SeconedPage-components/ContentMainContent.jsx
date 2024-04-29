@@ -3,6 +3,7 @@
 
 function ContentMainContent(props) {
     const { Data } = props;
+    Data ? Data : null;
     return (
         <div className="content text-white mt-8">
             <div className="text max-w-4xl text-center">

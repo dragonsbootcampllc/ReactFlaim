@@ -3,6 +3,7 @@
 
 function PageN7Nav(props) {
     const { Data } = props;
+    Data ? Data : null;
     return (
         <div className="nav p-5">
             <div className="container mx-auto ">
