@@ -1,7 +1,8 @@
-import Data from '../../MainData.json';
 
 
-function PageN7Nav () {    
+
+function PageN7Nav(props) {
+    const { Data } = props;
     return (
         <div className="nav p-5">
             <div className="container mx-auto ">

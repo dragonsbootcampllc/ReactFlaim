@@ -1,8 +1,9 @@
-import Data from '../../MainData.json';
 
 
 
-function Aside() {
+
+function Aside(props) {
+    const { Data } = props;
     return (
         <div className="side-bar text-white w-full  md:w-3/12 bg-SectionAsideColor2 ">
             <div className="head border-b border-borderColor ">

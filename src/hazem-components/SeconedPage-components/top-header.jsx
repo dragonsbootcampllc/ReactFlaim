@@ -1,6 +1,7 @@
-import Data from '../../MainData.json';
 
-function TopHeader() {
+
+function TopHeader(props) {
+    const { Data } = props;
     return (
         <div className='top-header text-white text-center pt-20' >
             <div className="container mx-auto max-w-3xl 	 ">

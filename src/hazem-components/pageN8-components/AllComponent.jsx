@@ -1,8 +1,9 @@
-import Data from '../../MainData.json';
 
 
 
-function AllComponent() {
+
+function AllComponent( props ) {
+    const { Data } = props;
     return (
         <div className=" all mt-8">
             <div className="header">

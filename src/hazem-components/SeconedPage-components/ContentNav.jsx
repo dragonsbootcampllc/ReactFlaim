@@ -1,6 +1,7 @@
-import Data from '../../MainData.json';
 
-function ContentNav() {
+
+function ContentNav(props) {
+    const { Data } = props;
     return (
 
         <div className="nav mt-5 border-t border-borderColor ">

@@ -1,7 +1,7 @@
 
-import Data from '../../MainData.json';
 
-function PageN7Header() {
+function PageN7Header(props) {
+    const { Data } = props;
     return (
         <div className="header py-6">
             <div className="container mx-auto text-white text-center  max-w-3xl ">

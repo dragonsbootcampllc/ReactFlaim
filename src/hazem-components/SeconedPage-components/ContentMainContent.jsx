@@ -1,7 +1,8 @@
-import Data from '../../MainData.json';
 
 
-function ContentMainContent() {
+
+function ContentMainContent(props) {
+    const { Data } = props;
     return (
         <div className="content text-white mt-8">
             <div className="text max-w-4xl text-center">

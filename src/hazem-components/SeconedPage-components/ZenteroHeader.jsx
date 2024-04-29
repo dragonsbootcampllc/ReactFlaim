@@ -1,7 +1,8 @@
-import Data from '../../MainData.json';
 
 
-function ZenteroHeader() {
+
+function ZenteroHeader(props) {
+    const { Data } = props;
     return (
             <div className='container mx-auto flex justify-between items-center	bg-SectionAsideColor2 p-4 pb-6 rounded-3xl	' >
                 <div className="colored flex">

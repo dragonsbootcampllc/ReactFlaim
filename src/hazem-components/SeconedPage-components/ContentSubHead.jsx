@@ -1,7 +1,8 @@
-import Data from '../../MainData.json';
 
 
-function ContentSubHead() {
+
+function ContentSubHead(props) {
+    const { Data } = props;
     return (
         <div className="sub-head flex justify-between items-center text-white  ">
             <div className="text">

@@ -1,9 +1,10 @@
-import Data from '../../MainData.json';
 
 
 
 
-function Header() {
+
+function Header(props) {
+    const { Data } = props;
     return (
         <div className=" container bg-black pt-16 text-center md:text-left">
             <h1 className=" text-white text-2xl md:text-5xl"> {Data.PageN5.Header.h1 }</h1>
