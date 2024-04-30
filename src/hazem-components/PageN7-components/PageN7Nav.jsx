@@ -1,8 +1,7 @@
 
 
 
-function PageN7Nav(props) {
-    const { Data } = props;
+function PageN7Nav({ Data }) {
     Data ? Data : null;
     return (
         <div className="nav p-5">

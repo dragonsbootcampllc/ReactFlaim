@@ -3,8 +3,7 @@
 
 
 
-function Header(props) {
-    const { Data } = props;
+function Header({ Data }) {
     Data ? Data : null;
     return (
         <div className=" container bg-black pt-16 text-center md:text-left">

@@ -1,8 +1,7 @@
 
 
 
-function Content(props) {
-    const { Data } = props;
+function Content({ Data }) {
     Data ? Data : null;
     return (
         <div className=" container boxes grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 pt-7 gap-4 ">

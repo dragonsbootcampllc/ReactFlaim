@@ -1,7 +1,6 @@
 
 
-function ContentNav(props) {
-    const { Data } = props;
+function ContentNav({ Data }) {
     Data ? Data : null;
     return (
         <div className="nav mt-5 border-t border-borderColor ">

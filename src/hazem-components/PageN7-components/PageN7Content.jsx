@@ -2,8 +2,7 @@
 
 
 
-function PageN7Content(props) {
-    const { Data } = props;
+function PageN7Content({ Data }) {
     Data ? Data : null;
     return (
         <div className="content py-4">
