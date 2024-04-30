@@ -1,7 +1,6 @@
 
 
-function TopHeader(props) {
-    const { Data } = props;
+function TopHeader( { Data }) {
     Data ? Data : null;
     return (
         <div className='top-header text-white text-center pt-20' >
