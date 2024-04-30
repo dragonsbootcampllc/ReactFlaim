@@ -12,6 +12,8 @@ import Pagen8 from './Pages/PageN8';
 
 // Style Sheets Imports
 import '/public/assets/css/index.css';
+import FirstPage from './Component/FirstPage/FirstPage.jsx';
+import Customer from './Component/Customer/Customer.jsx';
 
 // Application Component
 export function Application() {
@@ -23,6 +25,10 @@ export function Application() {
         <Route path="/pageN5" element={<PageN5 />} />
         <Route path="/pageN7" element={<PageN7 />} />
         <Route path="/pageN8" element={<Pagen8 />} />
+        <Route path="/first" element={<FirstPage/>} />
+        <Route path="/customer" element={<Customer/>} />
+
+
       </Routes>
     </BrowserRouter>
   );
