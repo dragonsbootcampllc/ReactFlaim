@@ -117,7 +117,31 @@
                     "span":"VP of Marketing at Flash"
                 }
             }
-    }
+    },
+    "LogosComp":{
+        "Header":{
+            "h1":"125+ Brands have growth their revenue with ",
+            "span":"hugo"
+        },
+        "Content":{
+            "top":{
+                "icon1":"logoName",
+                "icon2":"logoName",
+                "icon3":"logoName",
+                "icon4":"logoName",
+                "icon5":"logoName",
+                "icon6":"logoName"
+            },
+            "bottom":{
+                "icon1":"logoName",
+                "icon2":"logoName",
+                "icon3":"logoName",
+                "icon4":"logoName",
+                "icon5":"logoName",
+                "icon6":"logoName"
+            }
+        }
+}
 }
 
 
