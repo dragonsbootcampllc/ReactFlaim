@@ -1,7 +1,6 @@
 
 
-function Footer(props) {
-    const { Data } = props;
+function Footer({ Data }) {
     Data ? Data : null;
     return (
         <div className="container pt-10  pb-5">

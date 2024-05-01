@@ -1,8 +1,7 @@
 
 
 
-function ZenteroHeader(props) {
-    const { Data } = props;
+function ZenteroHeader({ Data }) {
     Data ? Data : null;
     return (
         <div className='container mx-auto flex justify-between items-center	bg-SectionAsideColor2 p-4 pb-6 rounded-3xl	' >

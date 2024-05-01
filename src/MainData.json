@@ -1,6 +1,6 @@
 
 {
-    "secondPage":{
+    "secondPage":{   
         "Aside":{
             "Headh1":"Zentro",
             "HeadP":"12members",
@@ -102,7 +102,6 @@
             "p2":"With Structured, you get experienced marketers who already understand wnat will drive results and wnat wont. No try-test-fail cycles. They implement innovative growth strategies that:"
         }
         },
-
     "PageN8":{
             "header":{
                 "p1":"Don't take our words",
@@ -118,7 +117,31 @@
                     "span":"VP of Marketing at Flash"
                 }
             }
-    }
+    },
+    "LogosComp":{
+        "Header":{
+            "h1":"125+ Brands have growth their revenue with ",
+            "span":"hugo"
+        },
+        "Content":{
+            "top":{
+                "icon1":"logoName",
+                "icon2":"logoName",
+                "icon3":"logoName",
+                "icon4":"logoName",
+                "icon5":"logoName",
+                "icon6":"logoName"
+            },
+            "bottom":{
+                "icon1":"logoName",
+                "icon2":"logoName",
+                "icon3":"logoName",
+                "icon4":"logoName",
+                "icon5":"logoName",
+                "icon6":"logoName"
+            }
+        }
+}
 }
 
 

@@ -1,7 +1,6 @@
 
 
-function PageN7Header(props) {
-    const { Data } = props;
+function PageN7Header({ Data }) {
     Data ? Data : null;
     return (
         <div className="header py-6">

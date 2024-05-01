@@ -2,8 +2,7 @@
 
 
 
-function AllComponent( props ) {
-    const { Data } = props;
+function AllComponent( { Data } ) {
     Data ? Data : null;
     return (
         <div className=" all mt-8">
