@@ -141,7 +141,77 @@
                 "icon6":"logoName"
             }
         }
-}
+},
+    "SearchBar":{
+        "TopHeader":{
+            "top_header":{
+                "h3_1":"Font",
+                "h1":"Poppins",
+                "p":"Aa Bb CC Dd Ee Ff Gg Hh li Jj Kk u Mm Nn oo ppqq Rr ss Tt uu vv ww xx zz",
+                "h3_2":"0 1 2 3 4 5 6 7 8 9"
+            },
+            "right":{
+                "p":"Colors",
+                "span1":"#2a85ff",
+                "span2":"#a7a7a7",
+                "span3":"#070707",
+                "span4":"#f0f5fa"
+            }
+        },
+        "MinSearchBar":{ "h1":"Find Your Dream Job Here :"},
+        "ContentHeader":{
+            "div":"Logo",
+            "li1":"Find Jobs",
+            "li2":"Find Talent",
+            "li3":"Upload Job",
+            "li4":"About Jobs"
+        },
+        "RecommendedJobs":{
+            "top":{
+                "h1":"Recommended Jobs",
+                "div":"Most recent"
+            },
+            "cont":{
+                "aside":{
+                    "head":{
+                        "h3":"Job Type",
+                        "p":"Clear All"
+                    },
+                    "optians":{
+                    "li1":"Full Time ",
+                    "li2":"Part Time",
+                    "li3":"Internship",
+                    "li4":"Project Work",
+                    "li5":"Volunteering"
+                    }
+                },
+                "cards":{
+                    "card1":{
+                        "header":{
+                            "h2":"Product designer",
+                            "span1":"MetaMask",
+                            "span2":".",
+                            "span3":"25 Aplicants"
+                        },
+                        "properties":{
+                            "span1":"Entry Level",
+                            "span2":"Full Time",
+                            "span3":"Full Time"
+                        },
+                        "para":"the thing tco invostots isthe thing tco isthe thing invostots ishat",
+                        "footer":{
+                            "p_1":"$250",
+                            "span":"/hr",
+                            "p_2":"Posted 12 days ago"
+                        }
+                    }
+                }
+                
+            }
+        }
+
+        
+    }
 }
 
 

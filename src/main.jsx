@@ -8,6 +8,7 @@ import PageN5 from './Pages/PageN5';
 import PageN7 from './Pages/PageN7';
 import Pagen8 from './Pages/PageN8';
 import LogosComp from './Pages/LogosComp';
+import SearchBar from './Pages/SearchBar';
 
 
 
@@ -25,6 +26,7 @@ export function Application() {
         <Route path="/pageN7" element={<PageN7 />} />
         <Route path="/pageN8" element={<Pagen8 />} />
         <Route path="/LogosComp" element={<LogosComp />} />
+        <Route path="/SearchBar" element={<SearchBar />} />
       </Routes>
     </BrowserRouter>
   );

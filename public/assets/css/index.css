@@ -25,13 +25,13 @@
     }
 }
 
-.content .container .top .icon{
+.content .container .top .icon {
     animation: moveRight 10s linear infinite, resetPositionTop 10s 5s linear infinite;
     transform: translateX(0);
 }
 
-.content .container .bottom .icon{
-    animation: moveLeft 10s linear infinite, resetPositionBottom 10s 5s linear  infinite;
+.content .container .bottom .icon {
+    animation: moveLeft 10s linear infinite, resetPositionBottom 10s 5s linear infinite;
     transform: translateX(100%);
 }
 

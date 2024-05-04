@@ -55,7 +55,6 @@ function Card({ Data}) {
                 </div>
             </div>
         </div>
-
     )
 }
 export default Card;
