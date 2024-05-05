@@ -61,7 +61,7 @@ Ensuring consistency in component structure and naming is crucial for maintainab
 
 - **Utility Functions**:
   - Name utility functions using camelCase (e.g., `utilityFunction`).
-  - Place shared utility functions in a separate file or folder if they are used by multiple components.
+  - Place shared utility functions in `Utiles` folder if they are used by multiple components.
 
 ### 2. className Prop
 
