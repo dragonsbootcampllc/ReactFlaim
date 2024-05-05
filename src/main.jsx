@@ -2,7 +2,6 @@
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Landing from './Pages/Landing';
 import ComponentsPlayGround from './Pages/ComponentsPlayGround';
 import SecondPage from './Pages/SecondPage';
 import PageN5 from './Pages/PageN5';
@@ -19,8 +18,7 @@ export function Application() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Landing />}></Route>
-        <Route path="/ComponentsPlayGround" element={<ComponentsPlayGround />} />
+        <Route path="/" element={<ComponentsPlayGround />} />
         <Route path="/secondPage" element={<SecondPage />} />
         <Route path="/pageN5" element={<PageN5 />} />
         <Route path="/pageN7" element={<PageN7 />} />

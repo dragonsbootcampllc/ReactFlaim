@@ -1,9 +1,9 @@
-import TopHeader from '../hazem-components/SeconedPage-components/top-header';
-import Aside from '../hazem-components/SeconedPage-components/Aside';
-import ContentMainContent from '../hazem-components/SeconedPage-components/ContentMainContent';
-import ContentNav from '../hazem-components/SeconedPage-components/ContentNav';
-import ContentSubHead from '../hazem-components/SeconedPage-components/ContentSubHead';
-import ZenteroHeader from '../hazem-components/SeconedPage-components/ZenteroHeader';
+import TopHeader from '../underDevelop/hazem-components/SeconedPage-components/top-header';
+import Aside from '../underDevelop/hazem-components/SeconedPage-components/Aside';
+import ContentMainContent from '../underDevelop/hazem-components/SeconedPage-components/ContentMainContent';
+import ContentNav from '../underDevelop/hazem-components/SeconedPage-components/ContentNav';
+import ContentSubHead from '../underDevelop/hazem-components/SeconedPage-components/ContentSubHead';
+import ZenteroHeader from '../underDevelop/hazem-components/SeconedPage-components/ZenteroHeader';
 
 
 

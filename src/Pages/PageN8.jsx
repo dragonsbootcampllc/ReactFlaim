@@ -1,4 +1,4 @@
-import AllComponent from '../hazem-components/pageN8-components/AllComponent';
+import AllComponent from '../underDevelop/hazem-components/pageN8-components/AllComponent';
 
 
 function PageN8() {

@@ -1,6 +1,6 @@
-import Header from '../hazem-components/PageN5-components/Header';
-import Content from '../hazem-components/PageN5-components/Content';
-import Footer from '../hazem-components/PageN5-components/Footer';
+import Header from '../underDevelop/hazem-components/PageN5-components/Header';
+import Content from '../underDevelop/hazem-components/PageN5-components/Content';
+import Footer from '../underDevelop/hazem-components/PageN5-components/Footer';
 
 
 
