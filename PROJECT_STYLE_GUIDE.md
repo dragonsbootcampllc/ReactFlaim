@@ -85,7 +85,7 @@ function ExampleComponent({ title }) {
 }
 
 ExampleComponent.propTypes = {
-    title: PropTypes.string.isRequired
+    title: PropTypes.string
 };
 ```
 
@@ -105,6 +105,40 @@ export default function ExampleComponent() {
 - **File Structure**: Each component should reside in its own file, and the filename should reflect the component name.
 - **Folder Structure**: Organize related components within the same folder to improve discoverability.
 
+After completing the development of your component, please follow these steps to ensure proper integration within the project's module system:
+
+1. **Create an `index.js` File in the Component Folder:**
+   - Navigate to the folder of the newly created component.
+   - Create an `index.js` file.
+   - Inside this file, import the component and immediately export it. This practice facilitates a more streamlined import path elsewhere in the application.
+
+   Example:
+   ```javascript
+   // In src/components/YourComponent/index.js
+   import YourComponent1 from './YourComponent1';
+   import YourComponent2 from './YourComponent2';
+
+   export {
+     YourComponent1,
+     YourComponent2
+   };
+   ```
+2. **Update the Main Index File `/index.js`:**
+   - Go to the main project index file, typically located at the root of the src directory.
+   - Import the component from its directory and export it again. This step is crucial for making the component globally available and for easier imports in other parts of the application.
+   Example:
+  ```javascript
+  // In src/index.js
+  import {
+    YourComponent1,
+    YourComponent2
+  } from './components/YourComponent';
+
+  export {
+    YourComponent1,
+    YourComponent2
+  };
+  ```
 ## Example Component Usage
 
 - `className` is main prop you have to provide for all components
