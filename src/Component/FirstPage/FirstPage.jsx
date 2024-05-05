@@ -1,5 +1,5 @@
-import React from 'react'
-import one from "../../../public/photos/papers.jpg"
+import one from "../../../public/photos/papers.jpg";
+
 export default function FirstPage() {
   return (
     <>
