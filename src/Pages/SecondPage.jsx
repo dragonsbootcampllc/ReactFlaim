@@ -4,23 +4,23 @@ import ContentMainContent from '../hazem-components/SeconedPage-components/Conte
 import ContentNav from '../hazem-components/SeconedPage-components/ContentNav';
 import ContentSubHead from '../hazem-components/SeconedPage-components/ContentSubHead';
 import ZenteroHeader from '../hazem-components/SeconedPage-components/ZenteroHeader';
-
+import Data from '../MainData.json'
 
 
 function SecondPage() {
     return (
         <div className=' bg-black'>
-            <TopHeader />
+            <TopHeader Data ={ Data} />
             <div className="container mx-auto bg-SectionAsideColor2 rounded-3xl w-full">
-                <ZenteroHeader />
+                <ZenteroHeader Data ={ Data}/>
                 <div className=" flex flex-col md:flex-row gap-4 mx-auto  ">
-                    <Aside />
+                    <Aside Data ={ Data} />
                     <div className='content flex-1  '>
                         <div className="all bg-SectionColor p-3 rounded-lg">
-                            <ContentSubHead />
-                            <ContentNav />
+                            <ContentSubHead Data ={ Data}/>
+                            <ContentNav Data ={ Data}/>
                         </div>
-                        <ContentMainContent />
+                        <ContentMainContent Data ={ Data} />
                         <div />
                     </div>
                 </div>

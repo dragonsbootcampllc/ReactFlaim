@@ -2,7 +2,9 @@
 
 
 
-function PageN7Content() {
+function PageN7Content(props) {
+    const { Data } = props;
+    Data ? Data : null;
     return (
         <div className="content py-4">
             <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 items-center  gap-10">
@@ -10,14 +12,10 @@ function PageN7Content() {
                     <img src="/public/photos/papers.jpg" alt=" image" className=" rounded-2xl " />
                 </div>
                 <div className="text text-white ">
-                    <h3 className=" text-[#f87760] text-sm">—ALL IN ONE AGENCY</h3>
-                    <h1 className=" text-3xl py-2">We Do proper analysis of your
-                        product to get started</h1>
-                    <p className=" text-borderColor pt-3">Meet experts behind the marketing secrets ot 125+ successful
-                        brands.</p>
-                    <p  className=" text-borderColor py-3">With Structured, you get experienced marketers who already
-                        understand wnat will drive results and wnat wont. No try-test-
-                        fail cycles. They implement innovative growth strategies that:</p>
+                    <h3 className=" text-[#f87760] text-sm">{ Data.PageN7.PageN7Content.h3 ?Data.PageN7.PageN7Content.h3 : "Null"}</h3>
+                    <h1 className=" text-3xl py-2">{ Data.PageN7.PageN7Content.h1 ? Data.PageN7.PageN7Content.h1 : "Null"}</h1>
+                    <p className=" text-borderColor pt-3">{ Data.PageN7.PageN7Content.p1 ?Data.PageN7.PageN7Content.p1:"Null"}</p>
+                    <p  className=" text-borderColor py-3">{ Data.PageN7.PageN7Content.p2? Data.PageN7.PageN7Content.p2 :"Null"}</p>
                 </div>
             </div>
         </div>

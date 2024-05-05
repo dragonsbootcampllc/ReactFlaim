@@ -1,0 +1,125 @@
+
+{
+    "secondPage":{
+        "Aside":{
+            "Headh1":"Zentro",
+            "HeadP":"12members",
+            "generalP":"GENRAL",
+            "generalLi1":"Search",
+            "generalLi2":"Billing",
+            "projectsP":"PROJECTS",
+            "projectsLi1":"Oribital oddysey",
+            "projectsLi2":"Digital Product launch",
+            "projectsLi3":"Brand Fresh",
+            "projectsLi4":"Social Media Strategy"
+        },
+        "ContentMainContent":{
+            "content":{
+                "h1":"Just Sign Up & Get a Free Demo of Zentro",
+                "p":"Aliquam et tellus urna. Phasellus egetadipiscing elit. Mauris id nunc odio.Aliquam et tellus urna. Phasellus egetl"
+            },
+            "box1":{
+                "p1":"Chat bot Creation",
+                "p2":"bot type "
+        },
+            "box2":{
+                "p1":"Developer API",
+                "p2":"API Integration "
+        },
+            "box3":{
+                "p1":"Copywriting",
+                "p2":"Product description "
+        },
+            "box4":{
+                "p1":"Sales",
+                "p2":"Hashtag ideas"
+        }
+    },
+    "ContentNav":{
+        "Li1":"Tool",
+        "Li2":"Chat",
+        "Li3":"Library"
+    },
+    "ContentSubHead":{
+        "Text1":{
+            "h1":"Jappanese Pottery",
+            "p":"Marketing Campaign for a new TV series Launch"
+        },
+        "Text2":{
+            "p":"share"
+        }
+    },
+    "TopHeader":{
+        "p1":"Just Sign Up & Get a Free Demo of Zentro",
+        "p2":"Aliquam et tellus urna. Phasellus egetadipiscing elit. Mauris id nunc odio. Aliquam et tellus urna. Phasellus egetl",
+        "button":"Submit"
+    },
+    "ZenteroHeader":{
+        "p":" zentero.com "
+    }
+
+    },
+
+    "PageN5":{
+        "Header":{  
+            "h1":"Eligibility & benefits",
+            "p":"Your startup can apply if:"
+        },
+        "Content":{
+            "card_p1":"ymtve raised fewerthan IS mlluon dollars In",
+            "card_p2":"You are a new Webflow customer",
+            "card_p3":"You have fewer than ernployws",
+            "card_p4":"Yore working with one of our startup partners"
+        },
+        "Footer":{
+            "text":{
+                "h1":"Sound like you?",
+                "p":"Apply to receive a free CMS site plan for a full year."
+            },
+            "Left":{
+                "button":"Apply for the startup discount",
+                "p":"Startups must all critena amve to qualify."
+            }
+        }
+    },
+
+    "PageN7":{
+        "PageN7Header":{
+            "h1_1":"Lets see how we we work",
+            "h1_2":"differently then other",
+            "span":"agency"
+        },
+        "PageN7Nav":{
+            "li1":"01",
+            "li2":"02",
+            "li3":"03",
+            "li4":"04"
+        },
+        "PageN7Content":{
+            "h3":"—ALL IN ONE AGENCY",
+            "h1":"We Do proper analysis of your product to get started",
+            "p1":"Meet experts behind the marketing secrets ot 125+ successful brands.",
+            "p2":"With Structured, you get experienced marketers who already understand wnat will drive results and wnat wont. No try-test-fail cycles. They implement innovative growth strategies that:"
+        }
+        },
+
+    "PageN8":{
+            "header":{
+                "p1":"Don't take our words",
+                "p2":"trust our customer"
+            },
+            "content_left":{
+                "h1":"\"",
+                "p1":"I can tell you first hand, Basecom is absolutely amazing. They have helped me",
+                "p2":"since they revamped our website and messaging. Highly Recommened!grow my business and have been so supportive. I highly recommend them to anyone",
+                "span":"grow my company by 125%",
+                "item":{
+                    "h3":"David Henricks",
+                    "span":"VP of Marketing at Flash"
+                }
+            }
+    }
+}
+
+
+
