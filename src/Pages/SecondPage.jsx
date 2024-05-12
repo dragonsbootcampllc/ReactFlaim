@@ -10,7 +10,7 @@ import Data from '../MainData.json'
 function SecondPage() {
     return (
         <div className=' bg-black'>
-            <TopHeader Data ={ Data} />
+            <TopHeader Data ={ Data } />
             <div className="container mx-auto bg-SectionAsideColor2 rounded-3xl w-full">
                 <ZenteroHeader Data ={ Data}/>
                 <div className=" flex flex-col md:flex-row gap-4 mx-auto  ">
@@ -20,7 +20,7 @@ function SecondPage() {
                             <ContentSubHead Data ={ Data}/>
                             <ContentNav Data ={ Data}/>
                         </div>
-                        <ContentMainContent Data ={ Data} />
+                        <ContentMainContent Data={Data} />
                         <div />
                     </div>
                 </div>

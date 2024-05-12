@@ -1,8 +1,7 @@
 
 
 
-function ContentSubHead(props) {
-    const { Data } = props;
+function ContentSubHead({ Data }) {
     Data ? Data : null;
     return (
         <div className="sub-head flex justify-between items-center text-white  ">
