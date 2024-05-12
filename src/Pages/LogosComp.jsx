@@ -1,5 +1,5 @@
 
-import Card from '../hazem-components/LogosComp-components/Card';
+import Card from '../underDevelop/hazem-components/LogosComp-components/Card';
 import Data from '../MainData.json';
 
 function LogosComp() {
