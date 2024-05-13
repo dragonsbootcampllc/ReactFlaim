@@ -5,14 +5,29 @@
 
 
 
+
+.content .container .top {
+    animation: moveRight 10s linear 0s infinite normal none  ;
+    /* transform: translateX(0); */
+}
+
+/* .content .container .bottom .icon{
+    animation: moveLeft 10s linear infinite, resetPositionBottom 10s 5s linear  infinite;
+    transform: translateX(100%);
+} */
+
+
+
+
 @keyframes moveRight {
     0% {
         transform: translateX(0);
     }
 
     100% {
-        transform: translateX(100%);
+        transform: translateX(calc(-230px* 8));
     }
+
 }
 
 @keyframes moveLeft {
@@ -23,34 +38,14 @@
     100% {
         transform: translateX(0);
     }
+    
 }
 
-.content .container .top .icon{
-    animation: moveRight 10s linear infinite, resetPositionTop 10s 5s linear infinite;
+0% {
     transform: translateX(0);
 }
 
-.content .container .bottom .icon{
-    animation: moveLeft 10s linear infinite, resetPositionBottom 10s 5s linear  infinite;
-    transform: translateX(100%);
-}
 
-@keyframes resetPositionTop {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
-@keyframes resetPositionBottom {
-    0% {
-        transform: translateX(-100%);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
+100% {
+    transform: translateX(calc(-230px* 8));
 }

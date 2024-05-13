@@ -12,7 +12,7 @@ function Card({ Data}) {
             <div className="content relative w-full p-2 overflow-hidden">
                 <div className="overlay absolute z-10  top-0 left-0 w-full h-full bg-[linear-gradient(to_right,_black,_transparent_30%,_transparent_50%,_transparent,_black)]   bottom-[0%]  right-[0%]"></div>
                 <div className="container relative" >
-                    <div className="top flex items-center gap-3 overflow-hidden ">
+                    <div className="top flex items-center gap-3  ">
                         <div className="icon">
                             { Data.Content.top.icon1 ? Data.Content.top.icon1:"Null"}
                         </div>
