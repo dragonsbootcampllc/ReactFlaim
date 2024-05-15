@@ -13,6 +13,7 @@ import Pagen8 from './Pages/PageN8';
 // Style Sheets Imports
 import '/public/assets/css/index.css';
 import Map from './Map/Map.jsx';
+import Charts from './Charts/Charts.jsx';
 
 // Application Component
 export function Application() {
@@ -25,6 +26,8 @@ export function Application() {
         <Route path="/pageN7" element={<PageN7 />} />
         <Route path="/pageN8" element={<Pagen8 />} />
         <Route path="/map" element={<Map />} />
+        <Route path="/chart" element={<Charts />} />
+
 
       </Routes>
     </BrowserRouter>
