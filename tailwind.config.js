@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       container: {
@@ -22,16 +19,14 @@ export default {
         TextColor: "#3057ba",
         SectionColor: "#06090b",
         SectionAsideColor2: "#060606",
-        ItemsColor:"#141518",
+        ItemsColor: "#141518",
         contactbg: "#4C5564",
-        inputContact: "#1F2B37"
-      },
+        inputContact: "#1F2B37",
       },
       boxShadow: {
-        'box-shadow': '0px 0px 25px 1px gray',
-      }
+        "box-shadow": "0px 0px 25px 1px gray",
+      },
     },
   },
   plugins: [],
-}
-
+};
