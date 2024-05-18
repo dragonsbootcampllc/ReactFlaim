@@ -28,7 +28,6 @@ export function Application() {
         <Route path="/map" element={<Map />} />
         <Route path="/chart" element={<Charts />} />
 
-
       </Routes>
     </BrowserRouter>
   );
