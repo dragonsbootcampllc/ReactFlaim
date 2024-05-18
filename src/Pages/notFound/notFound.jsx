@@ -1,6 +1,6 @@
 import img from "./2024-05-18_031346.png";
 
-const NotFound1_Inner = () => {
+const NotFound_page = () => {
   return (
     <div className="flex flex-col items-center text-center p-5 md:flex-row md:justify-around md:text-left lg:p-10 max-w-screen-2xl mx-auto bg-slate-100">
       <div className="max-w-lg">
@@ -27,4 +27,4 @@ const NotFound1_Inner = () => {
   );
 };
 
-export default NotFound1_Inner;
+export default NotFound_page;
