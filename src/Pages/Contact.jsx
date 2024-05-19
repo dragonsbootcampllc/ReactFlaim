@@ -94,9 +94,9 @@ export default function Contact1_Inner(props) {
             className="flex flex-col gap-4 mt-8"
             onSubmit={handleSubmit(onSubmit)}
           >
-            {formFields.map((field) => (
+            {formFields.map((field, index) => (
               <FormField
-                key={field.id}
+                key={index}
                 field={field}
                 register={register}
                 errors={errors}
@@ -123,15 +123,15 @@ export default function Contact1_Inner(props) {
           </div>
           <div className="flex flex-col w-full bg-contactbg gap-4 items-center mt-5 p-6 rounded-3xl">
             <div className="flex flex-col gap-3 text-white rounded-3xl xl:w-full">
-              {CompanyContactData.map((item) => (
-                <ContactItem key={item.id} item={item} />
+              {CompanyContactData.map((item, index) => (
+                <ContactItem key={index} item={item} />
               ))}
             </div>
           </div>
         </div>
         <div className="left xl:hidden flex flex-col w-full">
-          {CompanyContactData.map((item) => (
-            <div key={item.id} className="flex flex-col items-start p-2">
+          {CompanyContactData.map((item, index) => (
+            <div key={index} className="flex flex-col items-start p-2">
               <ContactItem item={item} />
             </div>
           ))}
