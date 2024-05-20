@@ -32,6 +32,7 @@ const x = [
       "Get started with dozens of web components and interactive elements built on top of Tailwind CSS.",
   },
 ];
+
 export default function TimeLineFlow({ data = x }) {
   return (
     <div className="mx-auto w-full bg-white bg-gradient-to-r dark:bg-gray-900 p-5">
