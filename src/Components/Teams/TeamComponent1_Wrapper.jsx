@@ -1,4 +1,3 @@
-import React from 'react';
 import TeamComponent1_Inner from './TeamComponent1_Inner';
 
 const teamMembers = [
