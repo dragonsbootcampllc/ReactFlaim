@@ -4,8 +4,8 @@ import { useState, useRef } from "react";
 export default function VerificationCodeInput1_Inner({
   className = "",
   length = 4,
-  onOtpSubmit = (v) => {
-    console.log(v);
+  onOTPSubmit = (verficationCode) => {
+    console.log(verficationCode);
   },
   note = 'Use Arrow keys to navigate between input fields'
 }) {
@@ -25,7 +25,7 @@ export default function VerificationCodeInput1_Inner({
       inputRefs.current[index + 1].focus();
     }
 
-    if (newOtp.every((data) => data !== "")) onOtpSubmit(newOtp.join(""));
+    if (newOtp.every((data) => data !== "")) onOTPSubmit(newOtp.join(""));
   };
 
   const handleKeyDown = (e, index) => {
@@ -67,6 +67,6 @@ export default function VerificationCodeInput1_Inner({
 VerificationCodeInput1_Inner.propTypes = {
   className: PropTypes.string,
   length: PropTypes.number,
-  onOtpSubmit: PropTypes.func,
+  onOTPSubmit: PropTypes.func,
   note: PropTypes.string
 };
