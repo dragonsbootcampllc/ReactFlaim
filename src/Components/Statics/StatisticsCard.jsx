@@ -1,5 +1,3 @@
-// src/components/StatisticsCard.js
-import React from "react";
 import { FaShoppingCart, FaUsers, FaBox, FaDollarSign } from "react-icons/fa";
 import { Line } from "react-chartjs-2";
 import "chart.js/auto";
