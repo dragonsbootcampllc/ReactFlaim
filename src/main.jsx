@@ -7,7 +7,7 @@ import ComponentsPlayGround from './Pages/ComponentsPlayGround';
 
 // Style Sheets Imports
 import '/public/assets/css/index.css';
-import NotFound_page from './Pages/notFound/NotFound';
+import NotFound_page from './Pages/notFound/NotFound1_Inner';
 
 // Application Component
 export function Application() {
