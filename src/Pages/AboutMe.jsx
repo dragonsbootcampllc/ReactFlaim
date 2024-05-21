@@ -112,7 +112,7 @@ export default function AboutMe({
   aboutMeData,
   dataItems,
   analyticsData,
-
+  className,
 }) {
   const aboutMeDataReq = aboutMeData
   const dataItemsReq = dataItems
@@ -120,7 +120,7 @@ export default function AboutMe({
 
   return (
     <div className="w-full flex justify-center m-4">
-    <div className="w-full p-12 max-w-7xl flex flex-col gap-4 items-center">
+    <div className={className}>
       <AboutMeData data={aboutMeDataReq} analyticsData={analyticsDataReq} />
       <div className="flex flex-col gap-4 items-center lg:flex-row w-full justify-center">
         {dataItemsReq.length === 4 || dataItemsReq.length === 3 ? (
@@ -182,6 +182,7 @@ AboutMe.defaultProps = {
   aboutMeData: aboutMeDataDefault,
   dataItems: defaultDataItems,
   analyticsData: analyticsDataDefault,
+  className: "w-full p-12 max-w-7xl flex flex-col gap-4 items-center"
 };
 
 AboutMe.propTypes = {
@@ -203,4 +204,5 @@ AboutMe.propTypes = {
       value: PropTypes.string,
     })
   ),
+  className: PropTypes.string,
 };
