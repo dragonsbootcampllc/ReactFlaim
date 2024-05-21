@@ -21,7 +21,7 @@ const NotFound1_Inner = () => {
           </button>
         </div>
       </div>
-      <div className="h-fit mt-8 md:mt-0 md:w-1/2 flex justify-center">
+      <div className="h-fit mt-8 md:mt-0 md:w-1/2 flex justify-center min-w-[50%]">
         <img src={img} alt="404 Error" className="max-w-full " />
       </div>
     </div>
