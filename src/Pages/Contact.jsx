@@ -1,6 +1,7 @@
 import React from "react";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { useForm } from "react-hook-form";
+import PropTypes from "prop-types";
 
 const defaultFormFields = [
   {
@@ -65,14 +66,9 @@ const CompanyContactData = [
   },
 ];
 
-export default function Contact1_Inner(props) {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
-
-  const formFields = props.formFields || defaultFormFields;
+export default function Contact1_Inner({ formFields, imgSrc, className }) {
+  const reqFormFields = formFields
+  const { register, handleSubmit, formState: { errors } } = useForm();
 
   const onSubmit = async (data) => {
     console.log("data", data);
@@ -80,7 +76,7 @@ export default function Contact1_Inner(props) {
 
   return (
     <div className="bg-gray-100 py-12 flex justify-center">
-      <div className="flex flex-col xl:flex-row gap-12 w-11/12 sm:w-8/12">
+      <div className={className}>
         <div className="container mx-auto bg-white p-12 rounded-3xl xl:w-1/2">
           <div className="flex flex-col gap-2">
             <h6 className="text-TextColor font-bold">Get in Touch</h6>
@@ -90,22 +86,11 @@ export default function Contact1_Inner(props) {
               message, and we'll get back to you within 24 hours.
             </p>
           </div>
-          <form
-            className="flex flex-col gap-4 mt-8"
-            onSubmit={handleSubmit(onSubmit)}
-          >
-            {formFields.map((field, index) => (
-              <FormField
-                key={index}
-                field={field}
-                register={register}
-                errors={errors}
-              />
+          <form className="flex flex-col gap-4 mt-8" onSubmit={handleSubmit(onSubmit)}>
+            {reqFormFields.map((field, index) => (
+              <FormField key={index} field={field} register={register} errors={errors} />
             ))}
-            <button
-              type="submit"
-              className="bg-blue-500 text-white p-2 rounded-md"
-            >
+            <button type="submit" className="bg-blue-500 text-white p-2 rounded-md">
               Send Message
             </button>
           </form>
@@ -114,11 +99,8 @@ export default function Contact1_Inner(props) {
           <div className="flex flex-col gap-4 items-center w-full rounded-2xl">
             <img
               className="w-full rounded-2xl"
-              src={
-                props.imgSrc ||
-                "https://media.istockphoto.com/id/841093480/photo/contact-us.jpg?s=612x612&w=0&k=20&c=SUs3dkEh_NgwejMA9i03wMTPz4UcEO2JkySTiPkT6u8="
-              }
-              alt="Contact Us Image"
+              src={imgSrc}
+              alt="Contact Us"
             />
           </div>
           <div className="flex flex-col w-full bg-contactbg gap-4 items-center mt-5 p-6 rounded-3xl">
@@ -149,9 +131,7 @@ function ContactItem({ item }) {
       </div>
       <div className="flex flex-col p-2">
         <span className="text-white font-bold">{item.title}</span>
-        <span className="text-gray-300 xl:text-gray xl:text-xs">
-          {item.value}
-        </span>
+        <span className="text-gray-300 xl:text-gray xl:text-xs">{item.value}</span>
       </div>
     </div>
   );
@@ -159,15 +139,13 @@ function ContactItem({ item }) {
 
 function FormField({ field, register, errors }) {
   return (
-    <div key={field.id} className="flex flex-col gap-2">
+    <div className="flex flex-col gap-2">
       <label htmlFor={field.id}>{field.label}</label>
       {field.isTextarea ? (
         <textarea
           id={field.id}
           placeholder={field.placeholder}
-          {...register(field.id, {
-            required: field.requiredMessage,
-          })}
+          {...register(field.id, { required: field.requiredMessage })}
           className="p-2 border border-gray-300 rounded-md max-w-full"
         ></textarea>
       ) : (
@@ -185,9 +163,20 @@ function FormField({ field, register, errors }) {
           className="p-2 border border-gray-300 rounded-md"
         />
       )}
-      {errors[field.id] && (
-        <span className="text-red-500">{errors[field.id].message}</span>
-      )}
+      {errors[field.id] && <span className="text-red-500">{errors[field.id].message}</span>}
     </div>
   );
 }
+
+Contact1_Inner.defaultProps = {
+  formFields: defaultFormFields,
+  imgSrc: "https://media.istockphoto.com/id/841093480/photo/contact-us.jpg?s=612x612&w=0&k=20&c=SUs3dkEh_NgwejMA9i03wMTPz4UcEO2JkySTiPkT6u8=",
+  className: "flex flex-col xl:flex-row gap-12 w-11/12 sm:w-8/12 max-w-screen-xl",
+
+};
+
+Contact1_Inner.propTypes = {
+  formFields: PropTypes.array,
+  imgSrc: PropTypes.string,
+  className: PropTypes.string,
+};

@@ -1,5 +1,6 @@
 import React from "react";
 import { GrAnnounce } from "react-icons/gr";
+import PropTypes from "prop-types";
 
 const defaultDataItems = [
   {
@@ -50,13 +51,13 @@ const analyticsDataDefault = [
   },
 ];
 
-function Data({ dataCurr, dataNext }) {
+function Data({ dataCurr, dataNext, index }) {
   return (
     <div className="flex flex-col w-full mt-12 ms:mt-28">
       <div className="flex flex-col">
         <div className="flex flex-col gap-12 items-center">
           <div className="w-full sm:w-1/2 flex flex-col gap-5 items-center">
-            <div className="flex gap-2 w-full">
+            <div className={`flex gap-2 flex-row ${index === 0? "sm:flex-row-reverse" : "sm:flex-row" } w-full`}>
               <div className="text-TextColor bg-blue-200 p-3 rounded-md h-10">
                 {dataCurr.icon}
               </div>
@@ -68,7 +69,7 @@ function Data({ dataCurr, dataNext }) {
           </div>
           {dataNext && (
             <div className="w-full sm:w-1/2 flex flex-col gap-4 items-center">
-              <div className="flex gap-2 w-full">
+              <div className={`flex gap-2 ${index === 0? "sm:flex-row-reverse" : "sm:flex-row" } w-full`}>
                 <div className="text-TextColor bg-blue-200 p-3 rounded-md h-10">
                   {dataNext.icon}
                 </div>
@@ -107,40 +108,99 @@ function AboutMeData({ data, analyticsData }) {
   );
 }
 
-export default function AboutMe(props) {
-  const aboutMeData = props.aboutMeData || aboutMeDataDefault;
-  const dataItems = props.dataItems || defaultDataItems;
-  const analyticsData = props.analyticsData || analyticsDataDefault;
+export default function AboutMe({
+  aboutMeData,
+  dataItems,
+  analyticsData,
+
+}) {
+  const aboutMeDataReq = aboutMeData
+  const dataItemsReq = dataItems
+  const analyticsDataReq = analyticsData
 
   return (
     <div className="w-full flex justify-center m-4">
-      <div className="w-full p-12 max-w-7xl flex flex-col gap-4 items-center">
-        <AboutMeData data={aboutMeData} analyticsData={analyticsData} />
-        <div className="flex flex-col gap-4 items-center lg:flex-row w-full justify-center">
-          {dataItems.map((item, index) => {
-            if (index % 2 === 0) {
-              return (
-                <React.Fragment key={index}>
-                  <Data
-                    dataCurr={item}
-                    dataNext={
-                      index + 1 < dataItems.length ? dataItems[index + 1] : null
-                    }
+    <div className="w-full p-12 max-w-7xl flex flex-col gap-4 items-center">
+      <AboutMeData data={aboutMeDataReq} analyticsData={analyticsDataReq} />
+      <div className="flex flex-col gap-4 items-center lg:flex-row w-full justify-center">
+        {dataItemsReq.length === 4 || dataItemsReq.length === 3 ? (
+          dataItemsReq.map((item, index) => (
+            index % 2 === 0 && (
+              <React.Fragment key={index}>
+                <Data
+                  dataCurr={item}
+                  dataNext={index + 1 < dataItemsReq.length ? dataItemsReq[index + 1] : null}
+                  index={index}
+                />
+                {index + 2 < dataItemsReq.length && (
+                  <img
+                    src={aboutMeData.img}
+                    alt="User Image"
+                    className="hidden lg:block py-7 mt-24 bg-gray-200"
                   />
-                  {index + 2 < dataItems.length && (
-                    <img
-                      src={aboutMeData.img}
-                      alt="User Image"
-                      className="hidden lg:block py-7 mt-24 bg-gray-200 "
-                    />
-                  )}
-                </React.Fragment>
-              );
-            }
-            return null;
-          })}
-        </div>
+                )}
+              </React.Fragment>
+            )
+          ))
+        ) : dataItemsReq.length === 2 ? (
+          dataItemsReq.map((item, index) => (
+            <React.Fragment key={index}>
+              <div className="flex flex-col w-full mt-12 sm:mt-28">
+                <div className="flex flex-col gap-12 items-center">
+                  <div className="w-full sm:w-1/2 flex flex-col gap-5 items-center">
+                    <div className={`flex gap-2 ${index === 0? "sm:flex-row-reverse" : "sm:flex-row" } w-full`}>
+                      <div className="text-TextColor bg-blue-200 p-3 rounded-md h-10">
+                        {item.icon}
+                      </div>
+                      <h1 className="text-l sm:text-xl font-bold py-1">{item.title}</h1>
+                    </div>
+                    <p className="text-xs sm:text-sm text-gray-500 font-bold w-full">
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
+              </div>
+              {index === 0 && (
+                <img
+                  src={aboutMeData.img}
+                  alt="User Image"
+                  className="hidden lg:block py-7 mt-24 bg-gray-200"
+                />
+              )}
+            </React.Fragment>
+          ))
+        ) : null
+        }
       </div>
     </div>
+  </div>
   );
 }
+
+
+AboutMe.defaultProps = {
+  aboutMeData: aboutMeDataDefault,
+  dataItems: defaultDataItems,
+  analyticsData: analyticsDataDefault,
+};
+
+AboutMe.propTypes = {
+  aboutMeData: PropTypes.shape({
+    title: PropTypes.string,
+    paragraph: PropTypes.string,
+    img: PropTypes.string,
+  }),
+  dataItems: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string,
+      icon: PropTypes.node,
+      description: PropTypes.string,
+    })
+  ),
+  analyticsData: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string,
+      value: PropTypes.string,
+    })
+  ),
+};
