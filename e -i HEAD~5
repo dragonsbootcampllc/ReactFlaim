@@ -1,0 +1,139 @@
+[33mcommit 43a9da965aadc4176f4b443fec1648eef3d9c13b[m[33m ([m[1;36mHEAD -> [m[1;32mnotFount-Component[m[33m, [m[1;31morigin/notFount-Component[m[33m)[m
+Author: Sarah hassan <sarraree5@gmail.com>
+Date:   Sat May 18 23:03:09 2024 +0300
+
+    fix : fix importing
+
+[33mcommit 36dbd852462f086a40cd32dada3bd3c45fef0e88[m
+Author: Sarah hassan <sarraree5@gmail.com>
+Date:   Sat May 18 23:00:50 2024 +0300
+
+    fix : fix component naming
+
+[33mcommit 7ea6b46e9ebb5135fd438140d0b2a1a0701e858e[m
+Author: Sarah hassan <sarraree5@gmail.com>
+Date:   Sat May 18 03:33:25 2024 +0300
+
+    feat: implement notFound page
+
+[33mcommit bbd100d29fed312e4e969def52dc56b4f1c86fe5[m
+Author: Sarah hassan <sarraree5@gmail.com>
+Date:   Sat May 18 02:57:09 2024 +0300
+
+    feat: create notFound page
+
+[33mcommit e70ed9dba2a736fa4f2c38d500f4d9ce327a464d[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;31morigin/26-team-component-2[m[33m, [m[1;32mmain[m[33m)[m
+Author: Faisal Ibrahim <79205676+DarkCode662432@users.noreply.github.com>
+Date:   Sun May 5 16:16:13 2024 +0300
+
+    Update PROJECT_STYLE_GUIDE.md
+
+[33mcommit c64a1261bc6077bb5befc13813ab1f0f996b5cf4[m
+Author: Faisal Ibrahim <79205676+DarkCode662432@users.noreply.github.com>
+Date:   Sun May 5 16:03:53 2024 +0300
+
+    Rename PROJECT_STYLE_GUIDE.md.md to PROJECT_STYLE_GUIDE.md
+
+[33mcommit 45d52b358b887e983e52bee038182ff996ca7ad1[m
+Author: Faisal Ibrahim <79205676+DarkCode662432@users.noreply.github.com>
+Date:   Sun May 5 16:03:00 2024 +0300
+
+    Update PROJECT_STYLE_GUIDE.md.md
+
+[33mcommit 876105cce0800419ecf2dfd55ec6dada6a8308ac[m
+Merge: 6df7460 c6d3dad
+Author: Faisal Ibrahim <79205676+DarkCode662432@users.noreply.github.com>
+Date:   Sun May 5 16:00:18 2024 +0300
+
+    Merge pull request #2 from dragonsbootcampllc/Top-Cursal
+    
+    Top Cursal
+
+[33mcommit c6d3dadc7a03dbd008ab7fbb1e0ed2dbfcf23561[m
+Merge: 9a44564 9dffbb4
+Author: DarkCode662432 <ff9371668@gmail.com>
+Date:   Sun May 5 15:59:58 2024 +0300
+
+    Merge branch 'main' into Top-Cursal
+
+[33mcommit 9dffbb44bbe2115d167f7c79a4c2548f8defb0b0[m
+Merge: 64d4e0c 6df7460
+Author: DarkCode662432 <ff9371668@gmail.com>
+Date:   Sun May 5 15:58:07 2024 +0300
+
+    Merge branch 'main' of https://github.com/dragonsbootcampllc/ReactFlaim
+
+[33mcommit 9a445648b1e3a7cda83cd37499e38b736c02d3b6[m
+Author: DarkCode662432 <ff9371668@gmail.com>
+Date:   Sun May 5 15:56:25 2024 +0300
+
+    [enhance]  🤓
+
+[33mcommit 2b4d9bcb79415ee9b14577b0eb9d1e06f1845de3[m
+Author: DarkCode662432 <ff9371668@gmail.com>
+Date:   Tue Apr 30 01:11:46 2024 +0300
+
+    [init] Create Top cursal 1 component
+
+[33mcommit 6df74605a1930bbde647cbac84430255167151c1[m
+Merge: 24d7acd 6764be2
+Author: Hamdy Saad <73494683+Hamdysaad20@users.noreply.github.com>
+Date:   Mon Apr 29 19:38:12 2024 +0300
+
+    Merge pull request #1 from dragonsbootcampllc/Data-File
+    
+    Data file
+
+[33mcommit 6764be253d8828eb77034cf23124f36acb2c5e43[m
+Author: hazem_m.o <hm3185@fayoum.edu.eg>
+Date:   Mon Apr 29 19:22:59 2024 +0300
+
+    Edit Statements all over files
+
+[33mcommit 163152e4c9c8a6013ec7cbc25fffdb03ae44dffc[m
+Author: hazem_m.o <hm3185@fayoum.edu.eg>
+Date:   Mon Apr 29 18:21:42 2024 +0300
+
+    Add validation
+
+[33mcommit a1fdc04c9f655f944f3dcc3860fd70c79f175066[m
+Author: hazem_m.o <hm3185@fayoum.edu.eg>
+Date:   Mon Apr 29 17:52:52 2024 +0300
+
+    New props added
+
+[33mcommit 64d4e0ca1331313bcb7c44c99cd9a7d7bb495abb[m
+Author: DarkCode662432 <ff9371668@gmail.com>
+Date:   Mon Apr 29 16:09:31 2024 +0300
+
+    [init]
+
+[33mcommit 7ab4a791c0cb8e3ce8d790e0d512071e43d3e02f[m
+Author: hazem_m.o <hm3185@fayoum.edu.eg>
+Date:   Mon Apr 29 13:57:11 2024 +0300
+
+    an URL removed
+
+[33mcommit 9ec74c40c7fc33d7a71f82c3d2393e67a3c6b908[m
+Author: hazem_m.o <hm3185@fayoum.edu.eg>
+Date:   Mon Apr 29 13:52:17 2024 +0300
+
+    new file add
+
+[33mcommit 24d7acdc37cf322369e085999abce8fc2ea5f64a[m
+Author: hamdysaad20 <hamdysaad.biz@gmail.com>
+Date:   Fri Apr 26 19:00:12 2024 +0300
+
+    Hazem's Updates
+
+[33mcommit eba60ad2c4a7c970ac3bb2848faeabe5126d7e4f[m
+Author: devbn3li <fudwhc@gmail.com>
+Date:   Thu Apr 25 19:48:38 2024 +0200
+
+    init
+
+[33mcommit a2ffa59bea76b330cb99a26689f4a8fcebe702f0[m
+Author: Hamdy Saad <73494683+Hamdysaad20@users.noreply.github.com>
+Date:   Tue Apr 23 20:36:12 2024 +0200
+
+    Initial commit
