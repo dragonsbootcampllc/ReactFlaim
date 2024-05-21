@@ -8,6 +8,7 @@ import ComponentsPlayGround from './Pages/ComponentsPlayGround';
 // Style Sheets Imports
 import '/public/assets/css/index.css';
 import NotFound_page from './Pages/notFound/NotFound1_Inner';
+import DataComp from './Components/dataComp/dataComp';
 
 // Application Component
 export function Application() {
@@ -15,7 +16,7 @@ export function Application() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<ComponentsPlayGround />} />
-        <Route path="*" element={<NotFound_page />} />
+        <Route path="*" element={<DataComp />} />
       </Routes>
     </BrowserRouter>
   );
