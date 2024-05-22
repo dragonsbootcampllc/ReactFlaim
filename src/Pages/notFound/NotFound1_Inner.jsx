@@ -1,4 +1,5 @@
 import img from "./2024-05-20_021047.png";
+import { Link } from "react-router-dom";
 
 
 const NotFound1_Inner = () => {
@@ -16,9 +17,9 @@ const NotFound1_Inner = () => {
             Uh oh, we can’t seem to find the page you’re looking for, contact us
             for more information.
           </p>
-          <button className="text-sm sm:text-base bg-blue-600 text-white px-2 py-2  rounded hover:bg-blue-700">
+          <Link to={"/"} className="text-sm sm:text-base bg-blue-600 text-white px-2 py-2  rounded hover:bg-blue-700">
             Back to Homepage
-          </button>
+          </Link>
         </div>
       </div>
       <div className="h-fit mt-8 md:mt-0 md:w-1/2 flex justify-center min-w-[50%]">
