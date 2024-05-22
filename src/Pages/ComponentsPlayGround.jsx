@@ -1,4 +1,5 @@
 import TopCarousel_1 from "../Components/Carousel/TopCarousel_1";
+import Grids from "../Components/Grid/Grid";
 import TeamSection from "../Components/Second Task/TeamDescribtion";
 
 export default function ComponentsPlayGround() {
@@ -6,6 +7,7 @@ export default function ComponentsPlayGround() {
         <div className="flex flex-col gap-12 items-center bg-black py-12">
             <TopCarousel_1 />
             <TeamSection/>
+            <Grids/>
         </div>
     )
 }
