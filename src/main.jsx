@@ -2,27 +2,29 @@
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import ComponentsPlayGround from './Pages/ComponentsPlayGround';
-import SecondPage from './Pages/SecondPage';
-import PageN5 from './Pages/PageN5';
-import PageN7 from './Pages/PageN7';
-import Pagen8 from './Pages/PageN8';
+// import ComponentsPlayGround from './Pages/ComponentsPlayGround';
+// import SecondPage from './Pages/SecondPage';
+// import PageN5 from './Pages/PageN5';
+// import PageN7 from './Pages/PageN7';
+// import Pagen8 from './Pages/PageN8';
 
 
 
 // Style Sheets Imports
 import '/public/assets/css/index.css';
+import CardListWrapper from './Components/cardsList/cardsList';
 
 // Application Component
 export function Application() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<ComponentsPlayGround />} />
+        {/* <Route path="/" element={<ComponentsPlayGround />} />
         <Route path="/secondPage" element={<SecondPage />} />
         <Route path="/pageN5" element={<PageN5 />} />
         <Route path="/pageN7" element={<PageN7 />} />
-        <Route path="/pageN8" element={<Pagen8 />} />
+        <Route path="/pageN8" element={<Pagen8 />} /> */}
+        <Route path="*" element={<CardListWrapper />} />
       </Routes>
     </BrowserRouter>
   );
