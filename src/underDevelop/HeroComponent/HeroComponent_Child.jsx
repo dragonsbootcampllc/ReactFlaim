@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 function HeroComponent_inner({ image,title1,title2,spanContent, description, LftButton, RgtButton}) {
     return (
-        <div className="hero bg-[rgb(243,244,246)] ">
+        <div className="hero bg-[rgb(243,244,246)] py-6 ">
             <div className="container mx-auto flex flex-col justify-between md:flex-row items-center">
                 <div className="image bg-[#f3f4f6]" >
                     <img src={image } alt="Hero Image" className='flex-shrink-0'/>
@@ -14,7 +14,7 @@ function HeroComponent_inner({ image,title1,title2,spanContent, description, Lft
                     </div>
                     <div className="buttons flex  md:flex-row gap-5 justify-center items-center md:justify-start ">
                         <button className='text-white text-sm md:text-xl border border-[#2563eb] px-6 py-2 rounded-[5px] bg-[#2563eb] hover:opacity-90 transition duration-100'>{LftButton} </button>
-                        <button className='text-sm md:text-xl  border border-black/80 px-6 py-2 rounded-[5px]  '>{RgtButton}</button>
+                        <button className='text-sm md:text-xl  border border-black/80 px-6 py-2 rounded-[5px]'>{RgtButton}</button>
                     </div>
                 </div>
         </div>
