@@ -57,7 +57,7 @@ function Data({ dataCurr, dataNext, index }) {
       <div className="flex flex-col">
         <div className="flex flex-col gap-12 items-center">
           <div className="w-full sm:w-1/2 flex flex-col gap-5 items-center">
-            <div className={`flex gap-2 flex-row ${index === 0? "sm:flex-row-reverse" : "sm:flex-row" } w-full`}>
+            <div className={`flex gap-2 flex-row ${index === 0? "md:flex-row-reverse" : "sm:flex-row" } w-full`}>
               <div className="text-TextColor bg-blue-200 p-3 rounded-md h-10">
                 {dataCurr.icon}
               </div>
@@ -69,7 +69,7 @@ function Data({ dataCurr, dataNext, index }) {
           </div>
           {dataNext && (
             <div className="w-full sm:w-1/2 flex flex-col gap-4 items-center">
-              <div className={`flex gap-2 ${index === 0? "sm:flex-row-reverse" : "sm:flex-row" } w-full`}>
+              <div className={`flex gap-2 ${index === 0? "md:flex-row-reverse" : "sm:flex-row" } w-full`}>
                 <div className="text-TextColor bg-blue-200 p-3 rounded-md h-10">
                   {dataNext.icon}
                 </div>
@@ -148,7 +148,7 @@ export default function AboutMe({
               <div className="flex flex-col w-full mt-12 sm:mt-28">
                 <div className="flex flex-col gap-12 items-center">
                   <div className="w-full sm:w-1/2 flex flex-col gap-5 items-center">
-                    <div className={`flex gap-2 ${index === 0? "sm:flex-row-reverse" : "sm:flex-row" } w-full`}>
+                    <div className={`flex gap-2 ${index === 0? "md:flex-row-reverse" : "sm:flex-row" } w-full`}>
                       <div className="text-TextColor bg-blue-200 p-3 rounded-md h-10">
                         {item.icon}
                       </div>
@@ -205,4 +205,32 @@ AboutMe.propTypes = {
     })
   ),
   className: PropTypes.string,
+};
+
+Data.propTypes = {
+  dataCurr: PropTypes.shape({
+    title: PropTypes.string,
+    icon: PropTypes.node,
+    description: PropTypes.string,
+  }),
+  dataNext: PropTypes.shape({
+    title: PropTypes.string,
+    icon: PropTypes.node,
+    description: PropTypes.string,
+  }),
+  index: PropTypes.number,
+};
+
+AboutMeData.propTypes = {
+  data: PropTypes.shape({
+    title: PropTypes.string,
+    paragraph: PropTypes.string,
+    img: PropTypes.string,
+  }),
+  analyticsData: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string,
+      value: PropTypes.string,
+    })
+  ),
 };
